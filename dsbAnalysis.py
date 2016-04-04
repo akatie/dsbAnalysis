@@ -85,9 +85,14 @@ def main():
     #  use for headers and titles on plots
     #
     path = "./"
-    subTeamName = ["Team 1","Team 2","Team 3","Team 4","Team 5"]
-    subInFile = ["submission1.csv","submission2.csv","submission3.csv","submission4.csv","submission5.csv"]
-    subOutFile = ["Team_1","Team_2","Team_3","Team_4","Team_5"]
+    #subTeamName = ["Team 1","Team 2","Team 3","Team 4","Team 5"]
+    # subInFile = ["submission1.csv","submission2.csv","submission3.csv","submission4.csv","submission5.csv"]
+    #subOutFile = ["Team_1","Team_2","Team_3","Team_4","Team_5"]
+
+    subTeamName = ["Team 1"]
+    subInFile = ["submission1.csv"]
+    subOutFile = ["Team_1"]
+
     subInFile = [path+x for x in subInFile]
     
     ######
@@ -105,7 +110,7 @@ def main():
     
     
     # Begin loop over submission files
-    for i_sub in range(len(subInFile[:1])):
+    for i_sub in range(len(subInFile)):
     
         print "Processing %s" % subTeamName[i_sub]
     
